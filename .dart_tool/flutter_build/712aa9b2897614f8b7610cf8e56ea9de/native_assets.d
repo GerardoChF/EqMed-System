@@ -1,0 +1,1 @@
+ C:\\Users\\gerar\\AppData\\Roaming\\FlutterFlow\\flutterflow\\equibriu_med_system\\.dart_tool\\flutter_build\\712aa9b2897614f8b7610cf8e56ea9de\\native_assets.yaml: 
