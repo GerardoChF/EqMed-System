@@ -12,32 +12,32 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:4:5-66
-14-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:4:22-64
+14-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:4:5-66
+14-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:4:22-64
 15    <uses-permission android:name="android.permission.BLUETOOTH" />
-15-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:6:5-68
-15-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:6:22-65
+15-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:6:5-68
+15-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:6:22-65
 16    <uses-permission android:name="BLUETOOTH_ADMIN" />
-16-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:7:5-54
-16-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:7:22-52
+16-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:7:5-54
+16-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:7:22-52
 17    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-17-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:8:5-76
-17-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:8:22-73
+17-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:8:5-76
+17-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:8:22-73
 18    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-18-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:9:5-73
-18-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:9:22-70
+18-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:9:5-73
+18-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:9:22-70
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:11:5-79
-19-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:11:22-76
+19-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:11:5-79
+19-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:11:22-76
 20    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-20-->[:flutter_bluetooth_serial] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-74
-20-->[:flutter_bluetooth_serial] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-71
+20-->[:flutter_bluetooth_serial] C:\Users\gerar\EqMed-System\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-74
+20-->[:flutter_bluetooth_serial] C:\Users\gerar\EqMed-System\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-71
 21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-21-->[:flutter_bluetooth_serial] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
-21-->[:flutter_bluetooth_serial] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
+21-->[:flutter_bluetooth_serial] C:\Users\gerar\EqMed-System\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+21-->[:flutter_bluetooth_serial] C:\Users\gerar\EqMed-System\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
 22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-22-->[:flutter_bluetooth_serial] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-79
-22-->[:flutter_bluetooth_serial] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-76
+22-->[:flutter_bluetooth_serial] C:\Users\gerar\EqMed-System\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-79
+22-->[:flutter_bluetooth_serial] C:\Users\gerar\EqMed-System\build\flutter_bluetooth_serial\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-76
 23    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 23-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\gerar\.gradle\caches\transforms-3\44b23e5bdcf0d73ca2b7d10e6d7d95f4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
 23-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\gerar\.gradle\caches\transforms-3\44b23e5bdcf0d73ca2b7d10e6d7d95f4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
@@ -54,32 +54,32 @@
 29-->[androidx.core:core:1.10.1] C:\Users\gerar\.gradle\caches\transforms-3\79d0a380ebf5da1905ef93602d4944ef\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
 30
 31    <application
-31-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:13:5-67:19
+31-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:13:5-67:19
 32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 32-->[androidx.core:core:1.10.1] C:\Users\gerar\.gradle\caches\transforms-3\79d0a380ebf5da1905ef93602d4944ef\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 33        android:debuggable="true"
 34        android:icon="@mipmap/ic_launcher"
-34-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:16:9-43
+34-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:16:9-43
 35        android:label="EquibriuMed System"
-35-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:14:9-43
+35-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:14:9-43
 36        android:requestLegacyExternalStorage="true" >
-36-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:17:9-52
+36-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:17:9-52
 37        <activity
-37-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:19:9-57:20
+37-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:19:9-57:20
 38            android:name="com.mycompany.equibriumedsystem.MainActivity"
-38-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:20:13-41
+38-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:20:13-41
 39            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-39-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:24:13-163
+39-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:24:13-163
 40            android:exported="true"
-40-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:21:13-36
+40-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:21:13-36
 41            android:hardwareAccelerated="true"
-41-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:25:13-47
+41-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:25:13-47
 42            android:launchMode="singleTop"
-42-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:22:13-43
+42-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:22:13-43
 43            android:theme="@style/LaunchTheme"
-43-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:23:13-47
+43-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:23:13-47
 44            android:windowSoftInputMode="adjustResize" >
-44-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:26:13-55
+44-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:26:13-55
 45
 46            <!--
 47                 Specifies an Android theme to apply to this Activity as soon as
@@ -88,11 +88,11 @@
 50                 to determine the Window background behind the Flutter UI.
 51            -->
 52            <meta-data
-52-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:31:13-34:17
+52-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:31:13-34:17
 53                android:name="io.flutter.embedding.android.NormalTheme"
-53-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:32:15-70
+53-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:32:15-70
 54                android:resource="@style/NormalTheme" />
-54-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:33:15-52
+54-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:33:15-52
 55            <!--
 56                 Displays an Android View that continues showing the launch screen
 57                 Drawable until Flutter paints its first frame, then this splash
@@ -101,50 +101,50 @@
 60                 Flutter's first frame.
 61            -->
 62            <meta-data
-62-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:40:13-43:17
+62-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:40:13-43:17
 63                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-63-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:41:15-79
+63-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:41:15-79
 64                android:resource="@drawable/launch_background" />
-64-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:42:15-61
+64-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:42:15-61
 65
 66            <intent-filter>
-66-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:44:13-47:29
+66-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:44:13-47:29
 67                <action android:name="android.intent.action.MAIN" />
-67-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:45:17-68
-67-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:45:25-66
+67-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:45:17-68
+67-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:45:25-66
 68
 69                <category android:name="android.intent.category.LAUNCHER" />
-69-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:46:17-76
-69-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:46:27-74
+69-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:46:17-76
+69-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:46:27-74
 70            </intent-filter>
 71            <!-- Deep linking -->
 72            <meta-data
-72-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:49:13-90
+72-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:49:13-90
 73                android:name="flutter_deeplinking_enabled"
-73-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:49:24-66
+73-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:49:24-66
 74                android:value="true" />
-74-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:49:67-87
+74-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:49:67-87
 75
 76            <intent-filter android:autoVerify="true" >
-76-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:50:13-55:29
-76-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:50:28-53
+76-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:50:13-55:29
+76-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:50:28-53
 77                <action android:name="android.intent.action.VIEW" />
-77-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:51:17-69
-77-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:51:25-66
+77-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:51:17-69
+77-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:51:25-66
 78
 79                <category android:name="android.intent.category.DEFAULT" />
-79-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:52:17-76
-79-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:52:27-73
+79-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:52:17-76
+79-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:52:27-73
 80                <category android:name="android.intent.category.BROWSABLE" />
-80-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:53:17-78
-80-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:53:27-75
+80-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:53:17-78
+80-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:53:27-75
 81
 82                <data
-82-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:54:17-97
+82-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:54:17-97
 83                    android:host="equibriumedsystem.com"
-83-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:54:58-94
+83-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:54:58-94
 84                    android:scheme="equibriumedsystem" />
-84-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:54:23-57
+84-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:54:23-57
 85            </intent-filter>
 86        </activity>
 87
@@ -153,44 +153,44 @@
 90             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 91        -->
 92        <meta-data
-92-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:61:9-63:33
+92-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:61:9-63:33
 93            android:name="flutterEmbedding"
-93-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:62:13-44
+93-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:62:13-44
 94            android:value="2" />
-94-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:63:13-30
+94-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:63:13-30
 95
 96        <service
-96-->[:firebase_performance] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:19
+96-->[:firebase_performance] C:\Users\gerar\EqMed-System\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:19
 97            android:name="com.google.firebase.components.ComponentDiscoveryService"
-97-->[:firebase_performance] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:12:18-89
+97-->[:firebase_performance] C:\Users\gerar\EqMed-System\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:12:18-89
 98            android:directBootAware="true"
 98-->[com.google.firebase:firebase-common:20.4.2] C:\Users\gerar\.gradle\caches\transforms-3\2ac1886cc7fa19cd13ffe1a07da61f70\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
 99            android:exported="false" >
 99-->[com.google.firebase:firebase-perf:20.5.1] C:\Users\gerar\.gradle\caches\transforms-3\dc3ec3ccd58d94beb78d1e09de029ffb\transformed\jetified-firebase-perf-20.5.1\AndroidManifest.xml:13:13-37
 100            <meta-data
-100-->[:firebase_performance] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:85
+100-->[:firebase_performance] C:\Users\gerar\EqMed-System\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:85
 101                android:name="com.google.firebase.components:io.flutter.plugins.firebase.performance.FlutterFirebaseAppRegistrar"
-101-->[:firebase_performance] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-130
+101-->[:firebase_performance] C:\Users\gerar\EqMed-System\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-130
 102                android:value="com.google.firebase.components.ComponentRegistrar" />
-102-->[:firebase_performance] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-82
+102-->[:firebase_performance] C:\Users\gerar\EqMed-System\build\firebase_performance\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-82
 103            <meta-data
-103-->[:cloud_firestore] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+103-->[:cloud_firestore] C:\Users\gerar\EqMed-System\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 104                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-104-->[:cloud_firestore] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+104-->[:cloud_firestore] C:\Users\gerar\EqMed-System\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
 105                android:value="com.google.firebase.components.ComponentRegistrar" />
-105-->[:cloud_firestore] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+105-->[:cloud_firestore] C:\Users\gerar\EqMed-System\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 106            <meta-data
-106-->[:firebase_auth] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+106-->[:firebase_auth] C:\Users\gerar\EqMed-System\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 107                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-107-->[:firebase_auth] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+107-->[:firebase_auth] C:\Users\gerar\EqMed-System\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 108                android:value="com.google.firebase.components.ComponentRegistrar" />
-108-->[:firebase_auth] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+108-->[:firebase_auth] C:\Users\gerar\EqMed-System\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 109            <meta-data
-109-->[:firebase_core] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+109-->[:firebase_core] C:\Users\gerar\EqMed-System\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 110                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-110-->[:firebase_core] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+110-->[:firebase_core] C:\Users\gerar\EqMed-System\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 111                android:value="com.google.firebase.components.ComponentRegistrar" />
-111-->[:firebase_core] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+111-->[:firebase_core] C:\Users\gerar\EqMed-System\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 112            <meta-data
 112-->[com.google.firebase:firebase-perf:20.5.1] C:\Users\gerar\.gradle\caches\transforms-3\dc3ec3ccd58d94beb78d1e09de029ffb\transformed\jetified-firebase-perf-20.5.1\AndroidManifest.xml:14:13-16:85
 113                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
@@ -278,13 +278,13 @@
 154        </service>
 155
 156        <activity
-156-->[:url_launcher_android] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+156-->[:url_launcher_android] C:\Users\gerar\EqMed-System\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
 157            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-157-->[:url_launcher_android] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+157-->[:url_launcher_android] C:\Users\gerar\EqMed-System\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
 158            android:exported="false"
-158-->[:url_launcher_android] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+158-->[:url_launcher_android] C:\Users\gerar\EqMed-System\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
 159            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-159-->[:url_launcher_android] C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+159-->[:url_launcher_android] C:\Users\gerar\EqMed-System\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
 160
 161        <service
 161-->[com.google.firebase:firebase-sessions:1.2.0] C:\Users\gerar\.gradle\caches\transforms-3\640707bbc6e6c4470d6ae8eef5db200e\transformed\jetified-firebase-sessions-1.2.0\AndroidManifest.xml:22:9-25:40
@@ -310,23 +310,23 @@
 172            <intent-filter>
 172-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\gerar\.gradle\caches\transforms-3\3fcedce4ea45b0612e1358ef0def400a\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
 173                <action android:name="android.intent.action.VIEW" />
-173-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:51:17-69
-173-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:51:25-66
+173-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:51:17-69
+173-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:51:25-66
 174
 175                <category android:name="android.intent.category.DEFAULT" />
-175-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:52:17-76
-175-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:52:27-73
+175-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:52:17-76
+175-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:52:27-73
 176                <category android:name="android.intent.category.BROWSABLE" />
-176-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:53:17-78
-176-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:53:27-75
+176-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:53:17-78
+176-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:53:27-75
 177
 178                <data
-178-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:54:17-97
+178-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:54:17-97
 179                    android:host="firebase.auth"
-179-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:54:58-94
+179-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:54:58-94
 180                    android:path="/"
 181                    android:scheme="genericidp" />
-181-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:54:23-57
+181-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:54:23-57
 182            </intent-filter>
 183        </activity>
 184        <activity
@@ -344,23 +344,23 @@
 190            <intent-filter>
 190-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\gerar\.gradle\caches\transforms-3\3fcedce4ea45b0612e1358ef0def400a\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
 191                <action android:name="android.intent.action.VIEW" />
-191-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:51:17-69
-191-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:51:25-66
+191-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:51:17-69
+191-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:51:25-66
 192
 193                <category android:name="android.intent.category.DEFAULT" />
-193-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:52:17-76
-193-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:52:27-73
+193-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:52:17-76
+193-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:52:27-73
 194                <category android:name="android.intent.category.BROWSABLE" />
-194-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:53:17-78
-194-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:53:27-75
+194-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:53:17-78
+194-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:53:27-75
 195
 196                <data
-196-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:54:17-97
+196-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:54:17-97
 197                    android:host="firebase.auth"
-197-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:54:58-94
+197-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:54:58-94
 198                    android:path="/"
 199                    android:scheme="recaptcha" />
-199-->C:\Users\gerar\AppData\Roaming\FlutterFlow\flutterflow\equibriu_med_system\android\app\src\main\AndroidManifest.xml:54:23-57
+199-->C:\Users\gerar\EqMed-System\android\app\src\main\AndroidManifest.xml:54:23-57
 200            </intent-filter>
 201        </activity>
 202

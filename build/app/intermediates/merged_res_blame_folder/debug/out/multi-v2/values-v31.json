@@ -4,14 +4,14 @@
             "outputFile": "com.mycompany.equibriumedsystem.app-mergeDebugResources-23:/values-v31/values-v31.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gerar\\AppData\\Roaming\\FlutterFlow\\flutterflow\\equibriu_med_system\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
+                    "source": "C:\\Users\\gerar\\EqMed-System\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
-                        "startOffsets": "173,816",
+                        "startOffsets": "176,830",
                         "endLines": "7,16",
                         "endColumns": "12,12",
-                        "endOffsets": "465,980"
+                        "endOffsets": "472,996"
                     },
                     "to": {
                         "startLines": "2,6",

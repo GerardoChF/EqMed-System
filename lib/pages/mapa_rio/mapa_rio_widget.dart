@@ -118,7 +118,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
           title: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
             child: Text(
-              'Variable de usuario',
+              'Bienvenido ${valueOrDefault(currentUserDocument?.name, '')}',
               style: FlutterFlowTheme.of(context).labelMedium.override(
                     fontFamily: 'Readex Pro',
                     letterSpacing: 0.0,
@@ -361,34 +361,68 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                 ),
                           ),
                         ),
+                        //VALORES PROMEDIO DE PATAS
                         Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  4.0, 4.0, 0.0, 12.0),
+                              padding: EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 0.0, 12.0),
                               child: Text(
-                                'Más Información',
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
+                                'Izquierda: ${(double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3))/3} kPa',
+                                style: FlutterFlowTheme.of(context).labelMedium.override(
                                       fontFamily: 'Readex Pro',
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                     ),
                               ),
                             ),
+                            SizedBox(
+                              height: 50.0,
+                              child: VerticalDivider(
+                                thickness: 3.0,
+                                color: FlutterFlowTheme.of(context).accent4,
+                              ),
+                            ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 4.0, 0.0, 12.0),
-                              child: Icon(
-                                Icons.navigate_next,
-                                color: Colors.black,
-                                size: 24.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 0.0, 12.0),
+                              child: Text(
+                                'Derecha: ${(double.parse(sensor4)+double.parse(sensor5)+double.parse(sensor6))/3} kPa',
+                                style: FlutterFlowTheme.of(context).labelMedium.override(
+                                      fontFamily: 'Readex Pro',
+                                      fontSize: 14.0,
+                                      letterSpacing: 0.0,
+                                    ),
                               ),
                             ),
                           ],
+                          // mainAxisSize: MainAxisSize.max,
+                          // mainAxisAlignment: MainAxisAlignment.center,
+                          // children: [
+                          //   Padding(
+                          //     padding: EdgeInsetsDirectional.fromSTEB(
+                          //         4.0, 4.0, 0.0, 12.0),
+                          //     child: Text(
+                          //       'Más Información',
+                          //       style: FlutterFlowTheme.of(context)
+                          //           .labelMedium
+                          //           .override(
+                          //             fontFamily: 'Readex Pro',
+                          //             fontSize: 14.0,
+                          //             letterSpacing: 0.0,
+                          //           ),
+                          //     ),
+                          //   ),
+                          //   Padding(
+                          //     padding: EdgeInsetsDirectional.fromSTEB(
+                          //         0.0, 4.0, 0.0, 12.0),
+                          //     child: Icon(
+                          //       Icons.navigate_next,
+                          //       color: Colors.black,
+                          //       size: 24.0,
+                          //     ),
+                          //   ),
+                          // ],
                         ),
                         SizedBox(
                           width: 350.0,
@@ -402,59 +436,161 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Text(
-                              _conversion(sensor1),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    letterSpacing: 0.0,
-                                  ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Text(
+                                  'S1',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  _conversion(sensor1),
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  'kPa',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                              ],
                             ),
-                            Text(
-                              _conversion(sensor2),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    letterSpacing: 0.0,
-                                  ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Text(
+                                  'S2',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  _conversion(sensor2),
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  'kPa',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                              ],
                             ),
-                            Text(
-                              _conversion(sensor3),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    letterSpacing: 0.0,
-                                  ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Text(
+                                  'S3',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  _conversion(sensor3),
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  'kPa',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                              ],
                             ),
-                            Text(
-                              _conversion(sensor4),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    letterSpacing: 0.0,
-                                  ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Text(
+                                  'S4',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  _conversion(sensor4),
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  'kPa',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                              ],
                             ),
-                            Text(
-                              _conversion(sensor5),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    letterSpacing: 0.0,
-                                  ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Text(
+                                  'S5',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  _conversion(sensor5),
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  'kPa',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                              ],
                             ),
-                            Text(
-                              _conversion(sensor6),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    letterSpacing: 0.0,
-                                  ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Text(
+                                  'S6',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  _conversion(sensor6),
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                                Text(
+                                  'kPa',
+                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                              ],
                             ),
                           ],
                         ),

@@ -1,11 +1,11 @@
-#Thu May 09 22:04:44 CST 2024
-base.0=C\:\\Users\\gerar\\AppData\\Roaming\\FlutterFlow\\flutterflow\\equibriu_med_system\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\gerar\\AppData\\Roaming\\FlutterFlow\\flutterflow\\equibriu_med_system\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\gerar\\AppData\\Roaming\\FlutterFlow\\flutterflow\\equibriu_med_system\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.3=C\:\\Users\\gerar\\AppData\\Roaming\\FlutterFlow\\flutterflow\\equibriu_med_system\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.4=C\:\\Users\\gerar\\AppData\\Roaming\\FlutterFlow\\flutterflow\\equibriu_med_system\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.5=C\:\\Users\\gerar\\AppData\\Roaming\\FlutterFlow\\flutterflow\\equibriu_med_system\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.6=C\:\\Users\\gerar\\AppData\\Roaming\\FlutterFlow\\flutterflow\\equibriu_med_system\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+#Fri May 10 19:06:24 CST 2024
+base.0=C\:\\Users\\gerar\\EqMed-System\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\gerar\\EqMed-System\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\gerar\\EqMed-System\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.3=C\:\\Users\\gerar\\EqMed-System\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.4=C\:\\Users\\gerar\\EqMed-System\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.5=C\:\\Users\\gerar\\EqMed-System\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.6=C\:\\Users\\gerar\\EqMed-System\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=0/classes.dex

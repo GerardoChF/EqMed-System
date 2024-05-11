@@ -204,7 +204,7 @@ class _LoginUWidgetState extends State<LoginUWidget>
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 0.0),
                                     child: Text(
-                                      'EquilibruiMed System',
+                                      'EquilibriuMed System',
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium
                                           .override(
@@ -327,7 +327,7 @@ class _LoginUWidgetState extends State<LoginUWidget>
                                                     ],
                                                     obscureText: false,
                                                     decoration: InputDecoration(
-                                                      labelText: 'Nombre(s)',
+                                                      labelText: 'Email',
                                                       labelStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -426,7 +426,7 @@ class _LoginUWidgetState extends State<LoginUWidget>
                                                     obscureText: !_model
                                                         .txtLnameVisibility,
                                                     decoration: InputDecoration(
-                                                      labelText: 'Apellido(s)',
+                                                      labelText: 'Contraseña',
                                                       labelStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
