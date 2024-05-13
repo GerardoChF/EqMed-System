@@ -374,8 +374,8 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                   Icons.circle,
                                   color: valueOrDefault<Color>(
                                     //si promedio esta entre +- 10% del valor meta
-                                    ((double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3) / 3) > 1.0) &&
-                                            (valueOrDefault(currentUserDocument?.sensor1, 0.0) < 4.0)
+                                    ((double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3) / 3) > (valueOrDefault(currentUserDocument?.sensor1, 0.0)*0.90)) &&
+                                            ((double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3) / 3) < (valueOrDefault(currentUserDocument?.sensor1, 0.0)*1.1))
                                         ? FlutterFlowTheme.of(context).alternate
                                         : FlutterFlowTheme.of(context).error,
                                     FlutterFlowTheme.of(context).error,
@@ -402,7 +402,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 0.0, 12.0),
+                                padding: EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 10.0, 12.0),
                                 child: Text(
                                   'Derecha: ${(double.parse(sensor4)+double.parse(sensor5)+double.parse(sensor6))/3} kPa',
                                   style: FlutterFlowTheme.of(context).labelMedium.override(
@@ -412,6 +412,19 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                       ),
                                 ),
                               ),
+                              AuthUserStreamWidget(
+                                builder: (context) => Icon(
+                                  Icons.circle,
+                                  color: valueOrDefault<Color>(
+                                    ((double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3) / 3) > (valueOrDefault(currentUserDocument?.sensor1, 0.0)*0.90)) &&
+                                            ((double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3) / 3) < (valueOrDefault(currentUserDocument?.sensor1, 0.0)*1.1))
+                                        ? FlutterFlowTheme.of(context).alternate
+                                        : FlutterFlowTheme.of(context).error,
+                                    FlutterFlowTheme.of(context).error,
+                                  ),
+                                  size: 24.0,
+                                )
+                              )
                             ],
                           )
                           // mainAxisSize: MainAxisSize.max,
