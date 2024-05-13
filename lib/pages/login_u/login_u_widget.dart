@@ -142,15 +142,6 @@ class _LoginUWidgetState extends State<LoginUWidget>
               context.pop();
             },
           ),
-          title: Text(
-            'Soy Usuario',
-            style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
-                  color: Colors.white,
-                  fontSize: 22.0,
-                  letterSpacing: 0.0,
-                ),
-          ),
           actions: [],
           centerTitle: false,
           elevation: 2.0,
@@ -299,7 +290,7 @@ class _LoginUWidgetState extends State<LoginUWidget>
                                                     .fromSTEB(
                                                         0.0, 12.0, 0.0, 24.0),
                                                 child: Text(
-                                                  'Equilibra tus pasos, equilibra tu vida',
+                                                  'Llena los campos para entrar a tu cuenta',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .labelMedium
@@ -642,7 +633,7 @@ class _LoginUWidgetState extends State<LoginUWidget>
                                                     .fromSTEB(
                                                         0.0, 12.0, 0.0, 24.0),
                                                 child: Text(
-                                                  'Equilibra tus pasos, equilibra tu vida',
+                                                  'Llena los campos para registrarte',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .labelMedium

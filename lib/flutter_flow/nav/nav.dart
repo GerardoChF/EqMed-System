@@ -99,11 +99,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => LoginUWidget(),
         ),
         FFRoute(
-          name: 'LoginP',
-          path: '/loginP',
-          builder: (context, params) => LoginPWidget(),
-        ),
-        FFRoute(
           name: 'MapaU',
           path: '/mapaU',
           builder: (context, params) => MapaUWidget(),

@@ -41,97 +41,87 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primary,
-          automaticallyImplyLeading: false,
-          title: Text(
-            'Inicio',
-            style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
-                  color: Colors.white,
-                  fontSize: 22.0,
-                  letterSpacing: 0.0,
-                ),
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(20.0),
+          child: AppBar(
+            backgroundColor: FlutterFlowTheme.of(context).primary,
+            automaticallyImplyLeading: false,
+            actions: [],
+            centerTitle: false,
+            elevation: 2.0,
           ),
-          actions: [],
-          centerTitle: false,
-          elevation: 2.0,
         ),
         body: SafeArea(
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(8.0),
-                child: Image.network(
-                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/equibriu-med-system-wn4ocl/assets/cun0dqydvzgw/EquiMed.png',
-                  width: 300.0,
-                  height: 347.0,
-                  fit: BoxFit.contain,
+              Container(
+                width: 100.0,
+                height: 347.0,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.of(context).primaryBackground,
+                ),
+                child: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(8.0),
+                    child: Image.network(
+                      'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/equibriu-med-system-wn4ocl/assets/cun0dqydvzgw/EquiMed.png',
+                      width: 300.0,
+                      height: MediaQuery.sizeOf(context).height * 1.0,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 40.0, 20.0, 0.0),
+                child: Text(
+                  'Equilibra tus pasos\nEquilibra tu vida',
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context).headlineSmall.override(
+                        fontFamily: 'Sora',
+                        color: Color(0xFF053956),
+                        letterSpacing: 0.0,
+                        lineHeight: 1.5,
+                      ),
                 ),
               ),
               Expanded(
                 child: Align(
                   alignment: AlignmentDirectional(0.0, 1.0),
-                  child: FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed('LoginU');
-                    },
-                    text: 'Soy Paciente',
-                    options: FFButtonOptions(
-                      width: 250.0,
-                      height: 40.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).primary,
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Readex Pro',
-                                color: Colors.white,
-                                letterSpacing: 0.0,
-                              ),
-                      elevation: 3.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
+                  child: Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                    child: FFButtonWidget(
+                      onPressed: () async {
+                        context.pushNamed('LoginU');
+                      },
+                      text: 'Iniciar',
+                      options: FFButtonOptions(
+                        width: MediaQuery.sizeOf(context).width * 0.3,
+                        height: 40.0,
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: FlutterFlowTheme.of(context).primary,
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Inter',
+                                  color: Colors.white,
+                                  letterSpacing: 0.0,
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
+                        ),
+                        borderRadius: BorderRadius.circular(24.0),
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed('LoginP');
-                    },
-                    text: 'Soy Profesional',
-                    options: FFButtonOptions(
-                      width: 250.0,
-                      height: 40.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).primary,
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Readex Pro',
-                                color: Colors.white,
-                                letterSpacing: 0.0,
-                              ),
-                      elevation: 3.0,
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
                     ),
                   ),
                 ),
