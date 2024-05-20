@@ -16,13 +16,6 @@ class UsersRecord extends FirestoreRecord {
     _initializeFields();
   }
 
-  // "ID" field.
-  int? _id;
-  int get id => _id ?? 0;
-
-  bool? get isPatient => null;
-  bool hasId() => _id != null;
-
   // "Name" field.
   String? _name;
   String get name => _name ?? '';
@@ -37,11 +30,6 @@ class UsersRecord extends FirestoreRecord {
   String? _email;
   String get email => _email ?? '';
   bool hasEmail() => _email != null;
-
-  // "password" field.
-  int? _password;
-  int get password => _password ?? 0;
-  bool hasPassword() => _password != null;
 
   // "sensor1" field.
   double? _sensor1;
@@ -98,12 +86,15 @@ class UsersRecord extends FirestoreRecord {
   String get phoneNumber => _phoneNumber ?? '';
   bool hasPhoneNumber() => _phoneNumber != null;
 
+  // "isPatient" field.
+  bool? _isPatient;
+  bool get isPatient => _isPatient ?? false;
+  bool hasIsPatient() => _isPatient != null;
+
   void _initializeFields() {
-    _id = castToType<int>(snapshotData['ID']);
     _name = snapshotData['Name'] as String?;
     _lName = snapshotData['LName'] as String?;
     _email = snapshotData['email'] as String?;
-    _password = castToType<int>(snapshotData['password']);
     _sensor1 = castToType<double>(snapshotData['sensor1']);
     _sensor2 = castToType<double>(snapshotData['sensor2']);
     _sensor3 = castToType<double>(snapshotData['sensor3']);
@@ -115,6 +106,7 @@ class UsersRecord extends FirestoreRecord {
     _uid = snapshotData['uid'] as String?;
     _createdTime = snapshotData['created_time'] as DateTime?;
     _phoneNumber = snapshotData['phone_number'] as String?;
+    _isPatient = snapshotData['isPatient'] as bool?;
   }
 
   static CollectionReference get collection =>
@@ -151,11 +143,9 @@ class UsersRecord extends FirestoreRecord {
 }
 
 Map<String, dynamic> createUsersRecordData({
-  int? id,
   String? name,
   String? lName,
   String? email,
-  int? password,
   double? sensor1,
   double? sensor2,
   double? sensor3,
@@ -166,15 +156,14 @@ Map<String, dynamic> createUsersRecordData({
   String? photoUrl,
   String? uid,
   DateTime? createdTime,
-  String? phoneNumber, bool? isPatient,
+  String? phoneNumber,
+  bool? isPatient,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
-      'ID': id,
       'Name': name,
       'LName': lName,
       'email': email,
-      'password': password,
       'sensor1': sensor1,
       'sensor2': sensor2,
       'sensor3': sensor3,
@@ -186,6 +175,7 @@ Map<String, dynamic> createUsersRecordData({
       'uid': uid,
       'created_time': createdTime,
       'phone_number': phoneNumber,
+      'isPatient': isPatient,
     }.withoutNulls,
   );
 
@@ -197,11 +187,9 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
 
   @override
   bool equals(UsersRecord? e1, UsersRecord? e2) {
-    return e1?.id == e2?.id &&
-        e1?.name == e2?.name &&
+    return e1?.name == e2?.name &&
         e1?.lName == e2?.lName &&
         e1?.email == e2?.email &&
-        e1?.password == e2?.password &&
         e1?.sensor1 == e2?.sensor1 &&
         e1?.sensor2 == e2?.sensor2 &&
         e1?.sensor3 == e2?.sensor3 &&
@@ -212,16 +200,15 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.photoUrl == e2?.photoUrl &&
         e1?.uid == e2?.uid &&
         e1?.createdTime == e2?.createdTime &&
-        e1?.phoneNumber == e2?.phoneNumber;
+        e1?.phoneNumber == e2?.phoneNumber &&
+        e1?.isPatient == e2?.isPatient;
   }
 
   @override
   int hash(UsersRecord? e) => const ListEquality().hash([
-        e?.id,
         e?.name,
         e?.lName,
         e?.email,
-        e?.password,
         e?.sensor1,
         e?.sensor2,
         e?.sensor3,
@@ -232,7 +219,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.photoUrl,
         e?.uid,
         e?.createdTime,
-        e?.phoneNumber
+        e?.phoneNumber,
+        e?.isPatient
       ]);
 
   @override
