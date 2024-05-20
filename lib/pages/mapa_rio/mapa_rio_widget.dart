@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -14,6 +16,7 @@ export 'mapa_rio_model.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 import 'dart:convert';
+import 'package:url_launcher/url_launcher.dart';
 
 
 class MapaRioWidget extends StatefulWidget {
@@ -115,19 +118,27 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           automaticallyImplyLeading: false,
-          title: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
-            child: Text(
-              'Bienvenido ${valueOrDefault(currentUserDocument?.name, '')}',
-              style: FlutterFlowTheme.of(context).labelMedium.override(
-                    fontFamily: 'Readex Pro',
-                    letterSpacing: 0.0,
-                  ),
+          leading: Align(
+            alignment: AlignmentDirectional(0.0, 0.0),
+            child: InkWell(
+              splashColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              onDoubleTap: () async {
+                await launchURL(
+                    'https://docs.google.com/document/d/1U_hZZnFdhN1IgwX_q2cvF5N-k9aojCikYU494gYV6sw/edit?usp=sharing');
+              },
+              child: Icon(
+                Icons.info_outlined,
+                color: FlutterFlowTheme.of(context).secondaryText,
+                size: 24.0,
+            ),
             ),
           ),
           actions: [
             Align(
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: AlignmentDirectional(0.0, 0.0),
               child: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                 child: FFButtonWidget(
@@ -135,7 +146,6 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                     GoRouter.of(context).prepareAuthEvent();
                     await authManager.signOut();
                     GoRouter.of(context).clearRedirectLocation();
-
                     context.pushNamedAuth('HomePage', context.mounted);
                   },
                   text: 'Cerrar Sesión',
@@ -147,8 +157,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                     width: MediaQuery.sizeOf(context).width * 0.3,
                     height: MediaQuery.sizeOf(context).height * 0.03,
                     padding: EdgeInsets.all(0.0),
-                    iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: Colors.transparent,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Readex Pro',
@@ -189,7 +198,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 4.0, 0.0, 0.0),
                               child: Text(
-                                'Plataforma de Rio',
+                                 'Bienvenido ${valueOrDefault(currentUserDocument?.name, '')}',
                                 style: FlutterFlowTheme.of(context)
                                     .headlineMedium
                                     .override(
@@ -223,7 +232,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                       children: [
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
-                              16.0, 50.0, 16.0, 0.0),
+                              16.0, 30.0, 16.0, 0.0),
                           child: Container(
                             width: 350.0,
                             height: 250.0,
@@ -251,8 +260,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                 Align(
                                   alignment: AlignmentDirectional(-0.54, -0.6),
                                   child: CircularPercentIndicator(
-                                    percent: (double.parse(_conversion(sensor1)) /
-                                      valueOrDefault(currentUserDocument?.sensor1, 0.0)) / 2,
+                                    percent: (_cPercentage(_conversion(sensor1), valueOrDefault(currentUserDocument?.sensor1, 0.0))),
                                     radius: 20.0,
                                     lineWidth: 8.0,
                                     animation: true,
@@ -267,8 +275,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                 Align(
                                   alignment: AlignmentDirectional(-0.83, 0.62),
                                   child: CircularPercentIndicator(
-                                    percent: (double.parse(_conversion(sensor2)) / 
-                                      valueOrDefault(currentUserDocument?.sensor1, 0.0)) / 2,
+                                    percent: (_cPercentage(_conversion(sensor2), valueOrDefault(currentUserDocument?.sensor2, 0.0))),
                                     radius: 20.0,
                                     lineWidth: 8.0,
                                     animation: true,
@@ -283,24 +290,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                 Align(
                                   alignment: AlignmentDirectional(-0.25, 0.62),
                                   child: CircularPercentIndicator(
-                                    percent: (double.parse(_conversion(sensor3)) / 
-                                      valueOrDefault(currentUserDocument?.sensor1, 0.0)) / 2,
-                                    radius: 20.0,
-                                    lineWidth: 8.0,
-                                    animation: true,
-                                    animateFromLastPercent: true,
-                                    progressColor:
-                                        FlutterFlowTheme.of(context).alternate,
-                                    backgroundColor:
-                                        FlutterFlowTheme.of(context).error,
-                                  ),
-                                ),
-                                //PROGRESS BAR 4
-                                Align(
-                                  alignment: AlignmentDirectional(0.26, 0.62),
-                                  child: CircularPercentIndicator(
-                                    percent: (double.parse(_conversion(sensor4)) / 
-                                      valueOrDefault(currentUserDocument?.sensor1, 0.0)) / 2,
+                                    percent: (_cPercentage(_conversion(sensor3), valueOrDefault(currentUserDocument?.sensor3, 0.0))),
                                     radius: 20.0,
                                     lineWidth: 8.0,
                                     animation: true,
@@ -313,10 +303,24 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                 ),
                                 //PROGRESS BAR 5
                                 Align(
+                                  alignment: AlignmentDirectional(0.26, 0.62),
+                                  child: CircularPercentIndicator(
+                                    percent: (_cPercentage(_conversion(sensor5), valueOrDefault(currentUserDocument?.sensor5, 0.0))),
+                                    radius: 20.0,
+                                    lineWidth: 8.0,
+                                    animation: true,
+                                    animateFromLastPercent: true,
+                                    progressColor:
+                                        FlutterFlowTheme.of(context).alternate,
+                                    backgroundColor:
+                                        FlutterFlowTheme.of(context).error,
+                                  ),
+                                ),
+                                //PROGRESS BAR 4
+                                Align(
                                   alignment: AlignmentDirectional(0.54, -0.6),
                                   child: CircularPercentIndicator(
-                                    percent: (double.parse(_conversion(sensor5)) / 
-                                      valueOrDefault(currentUserDocument?.sensor1, 0.0)) / 2,
+                                    percent: (_cPercentage(_conversion(sensor4), valueOrDefault(currentUserDocument?.sensor4, 0.0))),
                                     radius: 20.0,
                                     lineWidth: 8.0,
                                     animation: true,
@@ -331,8 +335,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                 Align(
                                   alignment: AlignmentDirectional(0.83, 0.62),
                                   child: CircularPercentIndicator(
-                                    percent: (double.parse(_conversion(sensor6)) / 
-                                      valueOrDefault(currentUserDocument?.sensor1, 0.0)) / 2,
+                                    percent: (_cPercentage(_conversion(sensor6), valueOrDefault(currentUserDocument?.sensor6, 0.0))),
                                     radius: 20.0,
                                     lineWidth: 8.0,
                                     animation: true,
@@ -374,19 +377,19 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                   Icons.circle,
                                   color: valueOrDefault<Color>(
                                     //si promedio esta entre +- 10% del valor meta
-                                    ((double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3) / 3) > (valueOrDefault(currentUserDocument?.sensor1, 0.0)*0.90)) &&
-                                            ((double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3) / 3) < (valueOrDefault(currentUserDocument?.sensor1, 0.0)*1.1))
+                                    ((_average(_conversion(sensor1), _conversion(sensor2), _conversion(sensor3))) > (valueOrDefault(currentUserDocument?.sensor1, 0.0)*0.90)) &&
+                                            ((_average(_conversion(sensor1), _conversion(sensor2), _conversion(sensor3))) < (valueOrDefault(currentUserDocument?.sensor1, 0.0)*1.1))
                                         ? FlutterFlowTheme.of(context).alternate
                                         : FlutterFlowTheme.of(context).error,
                                     FlutterFlowTheme.of(context).error,
-                                  ),
+                                  ), 
                                   size: 24.0,
                                 ),
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(10.0, 12.0, 4.0, 12.0),
                                 child: Text(
-                                  'Izquierda: ${(double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3))/3} kPa',
+                                  'Izquierda: ${_average(_conversion(sensor1), _conversion(sensor2), _conversion(sensor3)).toStringAsFixed(0)} kPa',
                                   style: FlutterFlowTheme.of(context).labelMedium.override(
                                         fontFamily: 'Readex Pro',
                                         fontSize: 14.0,
@@ -404,7 +407,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 10.0, 12.0),
                                 child: Text(
-                                  'Derecha: ${(double.parse(sensor4)+double.parse(sensor5)+double.parse(sensor6))/3} kPa',
+                                  'Derecha: ${_average(_conversion(sensor4), _conversion(sensor5), _conversion(sensor6)).toStringAsFixed(0)} kPa',
                                   style: FlutterFlowTheme.of(context).labelMedium.override(
                                         fontFamily: 'Readex Pro',
                                         fontSize: 14.0,
@@ -416,8 +419,8 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                 builder: (context) => Icon(
                                   Icons.circle,
                                   color: valueOrDefault<Color>(
-                                    ((double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3) / 3) > (valueOrDefault(currentUserDocument?.sensor1, 0.0)*0.90)) &&
-                                            ((double.parse(sensor1)+double.parse(sensor2)+double.parse(sensor3) / 3) < (valueOrDefault(currentUserDocument?.sensor1, 0.0)*1.1))
+                                    ((_average(_conversion(sensor4), _conversion(sensor5), _conversion(sensor6))) > (valueOrDefault(currentUserDocument?.sensor1, 0.0)*0.90)) &&
+                                            ((_average(_conversion(sensor4), _conversion(sensor5), _conversion(sensor6))) < (valueOrDefault(currentUserDocument?.sensor1, 0.0)*1.1))
                                         ? FlutterFlowTheme.of(context).alternate
                                         : FlutterFlowTheme.of(context).error,
                                     FlutterFlowTheme.of(context).error,
@@ -480,7 +483,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                         ),
                                   ),
                                   Text(
-                                    _conversion(sensor1),
+                                    _conversion(sensor1).toStringAsFixed(0),
                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                           fontFamily: 'Readex Pro',
                                           letterSpacing: 0.0,
@@ -506,7 +509,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                         ),
                                   ),
                                   Text(
-                                    _conversion(sensor2),
+                                    _conversion(sensor2).toStringAsFixed(0),
                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                           fontFamily: 'Readex Pro',
                                           letterSpacing: 0.0,
@@ -532,7 +535,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                         ),
                                   ),
                                   Text(
-                                    _conversion(sensor3),
+                                    _conversion(sensor3).toStringAsFixed(0),
                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                           fontFamily: 'Readex Pro',
                                           letterSpacing: 0.0,
@@ -558,7 +561,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                         ),
                                   ),
                                   Text(
-                                    _conversion(sensor4),
+                                    _conversion(sensor4).toStringAsFixed(0),
                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                           fontFamily: 'Readex Pro',
                                           letterSpacing: 0.0,
@@ -584,7 +587,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                         ),
                                   ),
                                   Text(
-                                    _conversion(sensor5),
+                                    _conversion(sensor5).toStringAsFixed(0),
                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                           fontFamily: 'Readex Pro',
                                           letterSpacing: 0.0,
@@ -610,7 +613,7 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
                                         ),
                                   ),
                                   Text(
-                                    _conversion(sensor6),
+                                    _conversion(sensor6).toStringAsFixed(0),
                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                           fontFamily: 'Readex Pro',
                                           letterSpacing: 0.0,
@@ -644,48 +647,73 @@ class _MapaRioWidgetState extends State<MapaRioWidget>
 
 //methods bt
   void _receiveData() {
+    StringBuffer buffer = StringBuffer();  // Buffer to accumulate data fragments.
+
     _connection?.input?.listen((Uint8List data) {
-       String decodedString = ascii.decode(data);
-       String trimmedString = decodedString.trim();
-       String ssdata = trimmedString;
-       List<String> values = sdata.split(',');
-        String val1 = values.isNotEmpty ? values[0] : 'N/A';
-        String val2 = values.length > 1 ? values[1] : 'N/A';
-        String val3 = values.length > 2 ? values[2] : 'N/A';
-        String val4 = values.length > 3 ? values[3] : 'N/A';
-        String val5 = values.length > 4 ? values[4] : 'N/A';
-        String val6 = values.length > 5 ? values[5] : 'N/A';
+      String decodedString = ascii.decode(data);
+      buffer.write(decodedString);  // Append new data to buffer.
 
-       debugPrint('ssdata = $sdata');
-       debugPrint('sensor1 = $val1');
-       debugPrint('sensor2 = $val2');
-       debugPrint('sensor3 = $val3');
-       debugPrint('sensor4 = $val4');
-       debugPrint('sensor5 = $val5');
-       debugPrint('sensor6 = $val6');
-
-       setState(() {
-         sdata = ssdata;
-         sensor1 = val1;
-         sensor2 = val2;
-         sensor3 = val3;
-         sensor4 = val4;
-         sensor5 = val5;
-         sensor6 = val6;
-       });
+      // Check if the buffer contains the end character (e.g., newline if your data ends with \n)
+      if (buffer.toString().contains('\n')) {
+        // Process complete messages separated by newlines
+        List<String> completeData = buffer.toString().split('\n');
+        // Handle each complete dataset
+        for (var i = 0; i < completeData.length - 1; i++) {
+          _processData(completeData[i]);
+        }
+        // Keep the last incomplete part in the buffer
+        buffer.clear();
+        buffer.write(completeData.last);
+      }
     });
-  }
+}
+void _processData(String data) {
+  List<String> values = data.trim().split(',');
 
+  // Initialize all values to '0' as a default
+  String val1 = '0', val2 = '0', val3 = '0', val4 = '0', val5 = '0', val6 = '0';
+
+  // Assign values if present
+  val1 = values.length > 0 ? values[0] : '0';
+  val2 = values.length > 1 ? values[1] : '0';
+  val3 = values.length > 2 ? values[2] : '0';
+  val4 = values.length > 3 ? values[3] : '0';
+  val5 = values.length > 4 ? values[4] : '0';
+  val6 = values.length > 5 ? values[5] : '0';
+  debugPrint('Sensor values: $val1, $val2, $val3, $val4, $val5, $val6');
+
+  setState(() {
+    sensor1 = val1;
+    sensor2 = val2;
+    sensor3 = val3;
+    sensor4 = val4;
+    sensor5 = val5;
+    sensor6 = val6;
+  });
+
+}
+      
   //CONVERSION BITS TO KPA
-  String _conversion(String value) {
+  double _conversion(String value) {
     var dvalue = double.parse(value);
-    return ((dvalue * 487.144) / 255).toStringAsFixed(2);
+    return ((dvalue * 487.144) / 255);
   }
 
-  void _sendData(String data) {
-    if (_connection?.isConnected ?? false) {
-      _connection?.output.add(ascii.encode(data));
-    }
+  //% CALCULATOR FOR MEDIDORES
+  double _cPercentage(double sensorValue, double valorMeta) {
+    // Define the threshold value for 100%
+    double threshold = valorMeta * 2;  // This should be 116 in your case
+    // Clamp the sensor value to the threshold
+    double clampedSensorValue = sensorValue > threshold ? threshold : sensorValue;
+    // Calculate the percentage
+    double percentage = clampedSensorValue / threshold;
+    // Ensure the percentage is within the range [0, 1]
+    return percentage;
+  }
+
+  //AVERAGE FUNCTION
+  double _average(sens1, sens2, sens3){
+    return((sens1 + sens2 + sens3) / 3);
   }
 
   void _requestPermission() async {

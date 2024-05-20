@@ -19,6 +19,8 @@ class UsersRecord extends FirestoreRecord {
   // "ID" field.
   int? _id;
   int get id => _id ?? 0;
+
+  bool? get isPatient => null;
   bool hasId() => _id != null;
 
   // "Name" field.
@@ -164,7 +166,7 @@ Map<String, dynamic> createUsersRecordData({
   String? photoUrl,
   String? uid,
   DateTime? createdTime,
-  String? phoneNumber,
+  String? phoneNumber, bool? isPatient,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
