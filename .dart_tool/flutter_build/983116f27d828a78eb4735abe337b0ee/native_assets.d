@@ -1,1 +1,0 @@
- C:\\Users\\gerar\\EqMed-System\\.dart_tool\\flutter_build\\983116f27d828a78eb4735abe337b0ee\\native_assets.yaml: 
